@@ -1,0 +1,256 @@
+@media (max-width: 500px) {
+  
+  .cont{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows:50px 19vh 59vh 50px !important;
+    border-radius: 10px;
+    
+}
+
+.header{
+  grid-row: 1;
+   background-color: teal;
+   color: white;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+.header1{
+   grid-column:1/7;
+   border-radius: 10px 0px 0px 0px;
+}
+.header2{
+   grid-column:7/13;
+   border-radius: 0px 10px 0px 0px;
+   padding-right:5px ;
+}
+.content1{
+   grid-row: 3!important;
+   max-height:59vh !important;
+   grid-column: 1/13 !important;
+   background-color: tomato;
+   color: white;
+   
+}
+.content2{
+   grid-row: 2!important;
+   max-height:19vh !important ;
+   grid-column: 1/13 !important;
+   background-color: tomato;
+}
+.fotter{
+   grid-column: 1/13;
+background-color: teal;
+border-radius: 0px 0px 10px 10px;
+text-align: center;
+color: white;
+}
+   #inpt{ 
+    margin: 10px 10px;
+    height: 50px;
+    width: auto;
+    padding: 7px;  
+ }
+}
+*{
+  box-sizing: border-box;
+}
+body{
+    overflow-y: hidden;
+    background-color: rgb(29, 27, 27);
+ }
+ .cont{
+     display: grid;
+     grid-template-columns: repeat(12,1fr);
+     grid-template-rows:50px 80vh 50px ;
+     border-radius: 10px;
+     
+ }
+ 
+ .header{
+    background-color: teal;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+ }
+ .header1{
+    grid-column:1/7;
+    border-radius: 10px 0px 0px 0px;
+ }
+ .header2{
+    grid-column:7/13;
+    border-radius: 0px 10px 0px 0px;
+    padding-right:5px ;
+ }
+ .content1{
+     max-height: 80vh;
+    grid-column: 1/8;
+    background-color: tomato;
+    color: white;
+    
+ }
+ .content2{
+     max-height: 80vh;
+    grid-column: 8/13;
+    background-color: tomato;
+ }
+ .fotter{
+    grid-column: 1/13;
+background-color: teal;
+border-radius: 0px 0px 10px 10px;
+text-align: center;
+color: white;
+ }
+ .task{
+     margin: 5px;
+ }
+ .border{
+    border: none;
+    outline: none;
+    border-radius: 7px;
+ }
+ #inpt{ 
+    margin: 10px 10px;
+    height: 100px;
+    width: auto;
+    padding: 7px;  
+ }
+ .list_items{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    border-radius: 10px;
+    align-items: center;
+    
+}
+.lii{
+    grid-column: 1/11;
+}
+
+ .container {
+     grid-column: 11/12;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-left: 5px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 7px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: lightskyblue;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+ .remove{
+     grid-column: 12/13;
+     grid-row: 1;
+     height: 25px;
+     width: 25px;
+     margin-left: 4px;
+     margin-bottom: -4px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    /*margin-left: 205px;*/
+ }
+ .remove:hover{
+     background-color: lightskyblue;
+     color: rgb(228, 13, 13);
+     transition: 1ms;
+ }
+ ol{
+     color: white;
+     cursor: pointer;   
+ }
+ li{
+     padding: 10px;
+ }
+ .list{
+     max-height: 60vh;             
+    overflow-y: scroll;
+    
+ }
+
+ /*custom scrroll bar */
+/* width of scrroll bar */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: tomato;  
+border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background-color: #333;
+box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(94, 93, 93); 
+}
